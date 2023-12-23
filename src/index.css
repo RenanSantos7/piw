@@ -11,19 +11,26 @@
   --cor-texto: #101010;
   --cor-titulo: #000;
 
-  --azulClaro: #06bee1;
-  --azulMedio: #3066be;
-  --azulEscuro: #07004d;
-  --contraste: #F2AF29;
-  --vermelho: #AD343E;
+  --azulClaro: hsl(190, 95%, 45%);
+  --azulMedio: hsl(217, 60%, 47%);
+  --azulEscuro: hsl(245, 100%, 15%);
+  --contraste: hsl(40, 89%, 55%);
+  --vermelho: hsl(355, 54%, 44%);
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root{
     --bg-geral: #101010;
     --bg-card: #2b2b2b;
+    --bg-destaque: hsl(193, 31%, 12%);
     --cor-texto: #f0f0f0;
     --cor-titulo: #fafafa;
+
+    --azulClaro: hsl(190, 95%, 45%);
+    --azulMedio: hsl(217, 60%, 47%);
+    --azulEscuro: hsl(245, 100%, 75%);
+    --contraste: hsl(40, 89%, 55%);
+    --vermelho: hsl(355, 54%, 44%);
   }
 }
 

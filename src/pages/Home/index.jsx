@@ -1,9 +1,16 @@
+import style from './Home.module.css'
 import Aside from '../../components/Aside/Aside'
 import Card from '../../components/Card/Card'
 import Header from '../../components/Header/Header'
-import style from './Home.module.css'
+import users from '../../json/users.js'
+import posts from '../../json/posts.js'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
+
+    const [usuarios, setUsuarios] = useState(users)
+    const [postagens, setPostagens] = useState(posts)
+
     return (
         <div className={style.home}>
             <Header />
@@ -11,38 +18,18 @@ export default function Home() {
                 <h1 className='pageTitle'>Home</h1>
 
                 <div className={style.cardContainer}>
-                    <Card
-                        key= {1}
-                    />
-                    
-                    <Card
-                        key= {2}
-                    />
-                    
-                    <Card
-                        key= {3}
-                    />
-                    <Card
-                        key= {4}
-                    />
-                    <Card
-                        key= {5}
-                    />
-                    <Card
-                        key= {6}
-                    />
-                    <Card
-                        key= {7}
-                    />
-                    <Card
-                        key= {8}
-                    />
-                    <Card
-                        key= {9}
-                    />
-                    <Card
-                        key= {10}
-                    />
+                    {postagens.map(postagem => {
+                        return (
+                            <Card
+                                key={postagem.id}
+                                usuario={usuarios.find(user => user.id === postagem.userid)}
+                                text={postagem.text}
+                                picture={postagem.picture}
+                                publicacao={postagem.published}
+                            />
+
+                        )
+                    })}
                 </div>
             </main>
             <Aside />

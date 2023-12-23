@@ -39,6 +39,16 @@
     color: var(--azulEscuro);
 }
 
-.post__conteudo p{
+.post__conteudo__texto{
     line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.post__conteudo__imagem {
+    border-radius: .5rem;
+}
+
+.publicacao {
+    font-size: .75rem;
+    opacity: .5;
 }
