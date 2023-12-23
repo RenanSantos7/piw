@@ -4,10 +4,18 @@
   --fonte-texto: ui-sans-serif, system-ui;
   --fonte-titulo: ui-sans-serif, system-ui;
 
-  --bg-geral: #fafafa;
+  --bg-geral: #fafafc;
   --bg-card: #fff;
+  --bg-destaque: #ecf3f5;
+  --borderColor: #77777757;
   --cor-texto: #101010;
   --cor-titulo: #000;
+
+  --azulClaro: #06bee1;
+  --azulMedio: #3066be;
+  --azulEscuro: #07004d;
+  --contraste: #F2AF29;
+  --vermelho: #AD343E;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -17,4 +25,32 @@
     --cor-texto: #f0f0f0;
     --cor-titulo: #fafafa;
   }
+}
+
+body {
+  background-color: var(--bg-geral);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+}
+
+#root {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulo);
+}
+
+hr {
+  width: 75%;
+  height: 1px;
+  background-color: var(--borderColor);
+  margin: 1.5rem auto;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 500;
 }

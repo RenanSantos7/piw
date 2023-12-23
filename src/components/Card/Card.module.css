@@ -1,0 +1,44 @@
+@keyframes aparecer {
+    from {opacity: 0; translate: 0 50px;}
+    to {opacity: 1; translate: 0 0;}
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0,.1);
+    background-color: var(--bg-card);
+
+    animation: aparecer .6s ease-in-out 1ms forwards;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 30%;
+}
+
+.user__img {
+    --tamanho: 50px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user__info h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--azulMedio);
+}
+
+.user__info p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--azulEscuro);
+}
+
+.post__conteudo p{
+    line-height: 1.2;
+}

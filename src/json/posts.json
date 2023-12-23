@@ -58,6 +58,52 @@
             "userid": 7,
             "text": "Bom dia! Hoje acordei inspirada. Terminei um ótimo livro",
             "published": "2023-12-23 07:05"
+        },
+        {
+            "id": 10,
+            "userid": 9,
+            "text": "Quem não vive a vida se arrende...",
+            "picute": "src/assets/pexels-photo-837358.webp",
+            "published": "2023-12-23 09:15"
+        },
+        {
+            "id": 11,
+            "userid": 10,
+            "text": "Nooosa que ressaca...",
+            "published": "2023-12-23 09:15"
+        },
+        {
+            "id": 12,
+            "userid": 4,
+            "text": "Sério essa preta é linda demais",
+            "picture": "src/assets/pexels-photo-1848565.webp",
+            "published": "2023-12-23 09:18"
+        },
+        {
+            "id": 13,
+            "userid": 11,
+            "text": "Você que é um lindo",
+            "replyto": 12,
+            "published": "2023-12-23 09:23"
+        },
+        {
+            "id": 14,
+            "userid": 12,
+            "text": "Oi lindos. Tutupom? ❤️",
+            "published": "2023-12-23 09:25"
+        },
+        {
+            "id": 15,
+            "userid": 13,
+            "text": "Vidas negras importam",
+            "picture": "src/assets/gayatri-malhotra-WzfqobnrSVc-unsplash.jpg",
+            "published": "2023-12-23 09:26"
+        },
+        {
+            "id": 16,
+            "userid": 6,
+            "text": "Não adianta reclamar se você não faz nada pra resolver... #foco",
+            "published": "2023-12-23 09:27"
         }
     ]
 }
