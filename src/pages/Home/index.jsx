@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header'
 import users from '../../json/users.js'
 import posts from '../../json/posts.js'
 import { useEffect, useState } from 'react'
+import CampoPost from './components/CampoPost.jsx'
 
 export default function Home() {
 
@@ -14,8 +15,10 @@ export default function Home() {
     return (
         <div className={style.home}>
             <Header />
-            <main>
+            <main className={style.main}>
                 <h1 className='pageTitle'>Home</h1>
+
+                <CampoPost />
 
                 <div className={style.cardContainer}>
                     {postagens.map(postagem => {
@@ -32,7 +35,7 @@ export default function Home() {
                     })}
                 </div>
             </main>
-            <Aside />
+            <Aside usuarios={usuarios} />
         </div>
     )
 }

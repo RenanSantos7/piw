@@ -41,11 +41,11 @@
 
 .post__conteudo__texto{
     line-height: 1.2;
-    margin-bottom: 1.2rem;
 }
 
 .post__conteudo__imagem {
     border-radius: .5rem;
+    margin-block: 1.2rem;
 }
 
 .publicacao {

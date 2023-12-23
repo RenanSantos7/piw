@@ -17,7 +17,7 @@ const posts = [
 		id: 3,
 		userid: 3,
 		replyto: 2,
-		text: 'Idiota',
+		text: 'Idiota 😡',
 		published: '2023-12-22 21:01',
 	},
 	{

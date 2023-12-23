@@ -4,10 +4,16 @@ import style from './Card.module.css'
 export default function Card({ usuario, text, publicacao, picture }) {
     
     const [autor, setAutor] = useState(usuario)
+
+    console.log(autor.photo)
     
     return (
         <article className={style.card}>
-            <img className={`circulo ${style.user__img}`} src={`/assets/perfil/${autor.photo}`} alt="" />
+            <img
+                className={`circulo ${style.user__img}`}
+                src={`/assets/perfil/${autor.photo}`}
+                alt=""
+            />
             
             <div className={style.post}>
                 <div className={style.user__info}>

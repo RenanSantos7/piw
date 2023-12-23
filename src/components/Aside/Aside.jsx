@@ -1,9 +1,9 @@
 import style from './Aside.module.css'
+import CardBatePapo from '../CardBatePapo/CardBatePapo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import CardBatePapo from '../CardBatePapo/CardBatePapo'
 
-export default function Aside() {
+export default function Aside({ usuarios }) {
     return (
         <aside className={style.aside}>
             <form className={style.search}>
@@ -17,42 +17,21 @@ export default function Aside() {
 
             <div className={style.batePapo}>
                 <h3 className={style.batePapo__title}>Contatos</h3>
+                <h4 className={style.batePapo__subtitle}>Clique para conversar</h4>
 
-                <CardBatePapo
-                    key={1}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
-                <CardBatePapo
-                    key={2}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
-                <CardBatePapo
-                    key={3}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
-                <CardBatePapo
-                    key={4}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
-                <CardBatePapo
-                    key={5}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
-                <CardBatePapo
-                    key={6}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
-                <CardBatePapo
-                    key={7}
-                    img='../../../public/assets/foto-perfil/015.jpg'
-                    nome={'Nome do usuário'}
-                />
+                {usuarios.map(usuario => {
+                    return (
+                        <CardBatePapo
+                            key={usuario.id}
+                            img={`assets/perfil/${usuario.photo}`}
+                            nome={`${usuario.name} ${usuario.surname}`}
+                        />
+                    )
+                })
+                }
+                
+                
+                
             </div>
         </aside>
     )
