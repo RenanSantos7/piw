@@ -1,0 +1,20 @@
+@import url('https://renansantos7.github.io/styles/reset.css');
+
+:root {
+  --fonte-texto: ui-sans-serif, system-ui;
+  --fonte-titulo: ui-sans-serif, system-ui;
+
+  --bg-geral: #fafafa;
+  --bg-card: #fff;
+  --cor-texto: #101010;
+  --cor-titulo: #000;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root{
+    --bg-geral: #101010;
+    --bg-card: #2b2b2b;
+    --cor-texto: #f0f0f0;
+    --cor-titulo: #fafafa;
+  }
+}
