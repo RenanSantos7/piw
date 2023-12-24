@@ -25,4 +25,5 @@
     background-color: var(--azulMedio);
     padding: .5rem 1rem;
     border-radius: .5rem;
+    color: white;
 }
