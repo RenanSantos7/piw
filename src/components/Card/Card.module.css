@@ -10,7 +10,6 @@
 
 .card {
     position: relative;
-    z-index: 10;
     display: flex;
     gap: 1rem;
     padding: 1rem;
@@ -24,12 +23,12 @@
 }
 
 .reply {
-    width: 1px;
-    background-color: silver;
+    background-color: var(--borderColor);
     position: absolute;
     left: 2.5rem;
     top: -1rem;
     height: 1rem;
+    width: 2px;
     
     animation: tamanhoLinha .6s ease-in-out 1ms forwards;
     animation-timeline: view(block);

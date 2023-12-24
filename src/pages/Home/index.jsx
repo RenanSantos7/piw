@@ -23,6 +23,7 @@ export default function Home({usuarios, postagens}) {
                                 text={postagem.text}
                                 picture={postagem.picture}
                                 publicacao={postagem.published}
+                                isReply={postagem.replyto ? true : false}
                             />
 
                         )
