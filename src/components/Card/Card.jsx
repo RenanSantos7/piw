@@ -1,25 +1,31 @@
 import { useState } from 'react'
 import style from './Card.module.css'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRepeat, faHeart as faHeartFill } from '@fortawesome/free-solid-svg-icons'
+import { faComment, faHeart as faHeartOutlined } from '@fortawesome/free-regular-svg-icons'
 
 export default function Card({ usuario, text, publicacao, picture }) {
     
     const [autor, setAutor] = useState(usuario)
 
-    console.log(autor.photo)
+    const [curtida, setCurtida] = useState(false)
     
     return (
         <article className={style.card}>
-            <img
-                className={`circulo ${style.user__img}`}
-                src={`/assets/perfil/${autor.photo}`}
-                alt=""
-            />
+            <Link to={`/perfil/${autor.id}`}>
+                <img
+                    className={`circulo ${style.user__img}`}
+                    src={`/assets/perfil/${autor.photo}`}
+                    alt=""
+                />
+            </Link>
             
             <div className={style.post}>
-                <div className={style.user__info}>
+                <Link to={`/perfil/${autor.id}`} className={style.user__info}>
                     <h3>{autor.name} {autor.surname}</h3>
                     <p>@{autor.handler}</p>
-                </div>
+                </Link>
 
                 <div className={style.post__conteudo}>                    
                     { text &&
@@ -27,12 +33,32 @@ export default function Card({ usuario, text, publicacao, picture }) {
                     }
                     
                     { picture &&
-                        <img className={style.post__conteudo__imagem} src={`/assets/posts/${picture}`} />
+                        <img className={style.post__conteudo__imagem} src={picture} />
                     }
                 </div>
 
-                <div className={style.publicacao}>
-                    {publicacao}
+                <div className={style.inferior}>
+                    <div className={style.publicacao}>
+                        {publicacao}
+                    </div>
+
+                    <div className={style.acoes}>
+                        <FontAwesomeIcon
+                            className={style.acoes__item}
+                            icon={faRepeat}
+                        />
+                        
+                        <FontAwesomeIcon
+                            className={style.acoes__item}
+                            icon={faComment}
+                        />
+                        
+                        <FontAwesomeIcon
+                            className={style.acoes__item}
+                            icon={curtida ? faHeartFill : faHeartOutlined}
+                            onClick={() => setCurtida(!curtida)}
+                        />
+                    </div>
                 </div>
             </div>
         </article>

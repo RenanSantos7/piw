@@ -2,15 +2,9 @@ import style from './Home.module.css'
 import Aside from '../../components/Aside/Aside'
 import Card from '../../components/Card/Card'
 import Header from '../../components/Header/Header'
-import users from '../../json/users.js'
-import posts from '../../json/posts.js'
-import { useEffect, useState } from 'react'
 import CampoPost from './components/CampoPost.jsx'
 
-export default function Home() {
-
-    const [usuarios, setUsuarios] = useState(users)
-    const [postagens, setPostagens] = useState(posts)
+export default function Home({usuarios, postagens}) {
 
     return (
         <div className={style.home}>

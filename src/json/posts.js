@@ -10,7 +10,7 @@ const posts = [
 		id: 2,
 		userid: 2,
 		text: 'Foi muito legal essa viagem com a pirralha da minha irmã',
-		picture: 'pexels-photo-214576.jpg',
+		picture: '/assets/posts/pexels-photo-214576.jpg',
 		published: '2023-12-22 21:00',
 	},
 	{
@@ -30,7 +30,7 @@ const posts = [
 		id: 5,
 		userid: 4,
 		replyto: 4,
-		picture: 'pexels-photo-1927595.jpg',
+		picture: '/assets/posts/pexels-photo-1927595.jpg',
 		published: '2023-12-22 21:04',
 	},
 	{
@@ -62,7 +62,7 @@ const posts = [
 		id: 10,
 		userid: 9,
 		text: 'Quem não vive a vida se arrende...',
-		picture: 'pexels-photo-837358.webp',
+		picture: '/assets/posts/pexels-photo-837358.webp',
 		published: '2023-12-23 09:15',
 	},
 	{
@@ -75,19 +75,19 @@ const posts = [
 		id: 12,
 		userid: 4,
 		text: 'Sério essa preta é linda demais',
-		picture: 'pexels-photo-1848565.webp',
+		picture: '/assets/posts/pexels-photo-1848565.webp',
 		published: '2023-12-23 09:18',
 	},
 	{
 		id: 13,
 		userid: 11,
-		text: 'Você que é um lindo',
+		text: '@rfsilva você que é um lindo',
 		replyto: 12,
 		published: '2023-12-23 09:23',
 	},
 	{
 		id: 14,
-		userid: 12,
+		userid: 15,
 		text: 'Oi lindos. Tutupom? ❤️',
 		published: '2023-12-23 09:25',
 	},
@@ -95,7 +95,7 @@ const posts = [
 		id: 15,
 		userid: 13,
 		text: 'Vidas negras importam',
-		picture: 'gayatri-malhotra-WzfqobnrSVc-unsplash.jpg',
+		picture: '/assets/posts/gayatri-malhotra-WzfqobnrSVc-unsplash.jpg',
 		published: '2023-12-23 09:26',
 	},
 	{
@@ -104,6 +104,43 @@ const posts = [
 		text: 'Não adianta reclamar se você não faz nada pra resolver... #foco',
 		published: '2023-12-23 09:27',
 	},
+	{
+		id: 17,
+		userid: 1,
+        text: 'Bom dia pessoas. Que tenham um bom domingo!',
+        published: '2023-12-24 07:59',
+	},
+	{
+		id: 18,
+        userid: 5,
+        text: 'Academia no domingo não dá. Ainda mais no domingo de Natal. Mas eu fui kkkkkkkk',
+        published: '2023-12-24 08:03',
+	},
+	{
+		id: 19,
+        userid: 15,
+        text: 'Ansiosa pra festa de hoje 🦃 🥂',
+        published: '2023-12-24 08:04',
+	},
+	{
+		id: 20,
+        userid: 8,
+        text: 'natal é uma merda',
+        published: '2023-12-24 08:05',
+	},
+	{
+		id: 21,
+        userid: 12,
+        text: 'Acordei animada! Como eu adoro o Natal!',
+        published: '2023-12-24 08:05',
+	},
+	{
+		id: 22,
+        userid: 12,
+		text: 'Minha árvore tá simples mas está bonita',
+		picture: 'https://www.tuacasa.com.br/wp-content/uploads/2020/11/arvore-de-natal-na-parede-3.jpg',
+        published: '2023-12-24 08:07'
+	}
 ]
 
 export default posts

@@ -4,8 +4,8 @@
 }
 
 .card {
+    position: relative;
     display: flex;
-    width: 100%;
     gap: 1rem;
     padding: 1rem;
     border-radius: .5rem;
@@ -51,4 +51,22 @@
 .publicacao {
     font-size: .75rem;
     opacity: .5;
+}
+
+.acoes {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.acoes__item {
+    opacity: .5;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.acoes__item:hover {
+    opacity: 1;
 }
