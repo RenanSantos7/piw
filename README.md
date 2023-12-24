@@ -1,6 +1,6 @@
 # Piw
 
-Este é um projeto de uma rede social fake. A estrutura da página é inspirada no Twitter e no [Bluesky](https://staging.bsky.app).
+Este é um projeto de uma rede social fake. A estrutura da página é inspirada no Twitter, no [Bluesky](https://staging.bsky.app) e no Facebook.
 
 ## Tecnologias usadas
 
