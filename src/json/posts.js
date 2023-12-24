@@ -140,6 +140,19 @@ const posts = [
 		text: 'Minha árvore tá simples mas está bonita',
 		picture: 'https://www.tuacasa.com.br/wp-content/uploads/2020/11/arvore-de-natal-na-parede-3.jpg',
         published: '2023-12-24 08:07'
+	},
+	{
+		id: 23,
+        userid: 10,
+        text: 'Feliz Natal Pessoal!',
+        published: '2023-12-24 10:11'
+	},
+	{
+		id: 24,
+        userid: 2,
+        text: 'Feliz Natal Thi!!!',
+		published: '2023-12-24 10:15',
+		replyto: 23
 	}
 ]
 

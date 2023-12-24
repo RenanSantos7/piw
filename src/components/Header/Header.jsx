@@ -8,6 +8,7 @@ import {
     faHouse,
     faSearch,
     faUserCircle,
+    faTicket
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
@@ -57,6 +58,29 @@ export default function Header() {
                     </li>
                 </ul>
                 <hr />
+
+                <div>
+                    <div className={style.convites}>
+                        <FontAwesomeIcon icon={faTicket} />
+                        <span>5 convites</span>
+                    </div>
+                </div>
+
+                <hr />
+                <ul className={style.outrosLinks}>
+                    <li className={style.outrosLinks__item}>
+                        <a href='#'>Termos de uso</a>
+                    </li>
+                    
+                    <li className={style.outrosLinks__item}>
+                        <a href='#'>Ajuda</a>
+                    </li>
+                    
+                    <li className={style.outrosLinks__item}>
+                        <a href='https://github.com/renansantos7/piw'>Piw no Github</a>
+                    </li>
+                </ul>
+               
             </nav>
             <BotaoPraCima />
         </header>

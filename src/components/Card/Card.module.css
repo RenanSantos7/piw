@@ -1,10 +1,16 @@
-@keyframes aparecer {
+@keyframes aparecerCard {
     from {opacity: 0; translate: 0 50px;}
     to {opacity: 1; translate: 0 0;}
 }
 
+@keyframes tamanhoLinha {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .card {
     position: relative;
+    z-index: 10;
     display: flex;
     gap: 1rem;
     padding: 1rem;
@@ -12,9 +18,22 @@
     box-shadow: 0 0 5px rgba(0, 0, 0,.1);
     background-color: var(--bg-card);
 
-    animation: aparecer .6s ease-in-out 1ms forwards;
+    animation: aparecerCard .6s ease-in-out 1ms forwards;
     animation-timeline: view(block);
     animation-range: cover 0% cover 30%;
+}
+
+.reply {
+    width: 1px;
+    background-color: silver;
+    position: absolute;
+    left: 2.5rem;
+    top: -1rem;
+    height: 1rem;
+    
+    animation: tamanhoLinha .6s ease-in-out 1ms forwards;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 10%;
 }
 
 .user__img {

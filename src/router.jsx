@@ -12,6 +12,10 @@ export default function routerApp() {
     const dateB = new Date(b.published)
 
     if (dateA > dateB) {
+      if (a.replyto == b.id) {
+        return 1
+      }
+
       return -1
     }
     if (dateA < dateB) {
@@ -27,8 +31,19 @@ export default function routerApp() {
     <BrowserRouter>
       <Routes>
         <Route path='/'>
-          <Route index element={<Home usuarios={usuarios} postagens={postagens} />} />
-          <Route path='/perfil/:id' element={<Perfil usuarios={usuarios} postagens={postagens} />} />
+          <Route index element={
+            <Home
+              usuarios={usuarios}
+              postagens={postagens}
+            />
+          } />
+
+          <Route path='/perfil/:id' element={
+            <Perfil
+              usuarios={usuarios}
+              postagens={postagens}
+            />
+          } />
         </Route>
       </Routes>
     </BrowserRouter>

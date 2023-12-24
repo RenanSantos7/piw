@@ -40,3 +40,27 @@
     background-color: var(--bg-destaque);
     color: var(--azulMedio);
 }
+
+.convites {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.convites:hover {
+    color: var(--azulMedio);
+}
+
+.outrosLinks {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.outrosLinks__item {
+    font-size: .8rem;
+    color: var(--azulMedio)
+}

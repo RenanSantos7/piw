@@ -4,7 +4,7 @@
   --fonte-texto: ui-sans-serif, system-ui;
   --fonte-titulo: ui-sans-serif, system-ui;
 
-  --bg-geral: #efeff0;
+  --bg-geral: #f7f7fa;
   --bg-card: #fff;
   --bg-destaque: #ecf3f5;
   --borderColor: #77777757;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-  width: 75%;
+  width: 100%;
   height: 1px;
   background-color: var(--borderColor);
   margin: 1.5rem auto;

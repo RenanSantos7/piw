@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRepeat, faHeart as faHeartFill } from '@fortawesome/free-solid-svg-icons'
 import { faComment, faHeart as faHeartOutlined } from '@fortawesome/free-regular-svg-icons'
 
-export default function Card({ usuario, text, publicacao, picture }) {
+export default function Card({ usuario, text, publicacao, picture, isReply }) {
     
     const [autor, setAutor] = useState(usuario)
 
@@ -13,6 +13,7 @@ export default function Card({ usuario, text, publicacao, picture }) {
     
     return (
         <article className={style.card}>
+            <div className={isReply ? `${style.reply}` : ''}></div>
             <Link to={`/perfil/${autor.id}`}>
                 <img
                     className={`circulo ${style.user__img}`}
