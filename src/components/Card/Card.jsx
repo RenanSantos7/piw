@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRepeat, faHeart as faHeartFill } from '@fortawesome/free-solid-svg-icons'
 import { faComment, faHeart as faHeartOutlined } from '@fortawesome/free-regular-svg-icons'
+////import Imagem from '../Imagem/Imagem'
 
 export default function Card({ usuario, text, publicacao, picture, isReply }) {
     
@@ -34,7 +35,7 @@ export default function Card({ usuario, text, publicacao, picture, isReply }) {
                     }
                     
                     { picture &&
-                        <img className={style.post__conteudo__imagem} src={picture} />
+                        <img src={picture} alt='' className={style.post__conteudo__imagem} />
                     }
                 </div>
 

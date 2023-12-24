@@ -3,14 +3,6 @@
     gap: 1rem;
 }
 
-.perfilContainer {
-    display: flex;
-}
-
-.perfilContainer img {
-    border-radius: 4rem;
-}
-
 .perfil__info {
     display: flex;
     flex-direction: column;

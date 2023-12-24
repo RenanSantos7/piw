@@ -1,7 +1,8 @@
 import style from './Home.module.css'
-import Aside from '../../components/Aside/Aside'
-import Card from '../../components/Card/Card'
-import Header from '../../components/Header/Header'
+import Aside from '../../components/Aside/Aside.jsx'
+import Main from '../../components/Main/Main.jsx'
+import Card from '../../components/Card/Card.jsx'
+import Header from '../../components/Header/Header.jsx'
 import CampoPost from './components/CampoPost.jsx'
 
 export default function Home({usuarios, postagens}) {
@@ -9,7 +10,7 @@ export default function Home({usuarios, postagens}) {
     return (
         <div className={style.home}>
             <Header />
-            <main className={style.main}>
+            <Main>
                 <h1 className='pageTitle'>Home</h1>
 
                 <CampoPost />
@@ -29,7 +30,7 @@ export default function Home({usuarios, postagens}) {
                         )
                     })}
                 </div>
-            </main>
+            </Main>
             <Aside usuarios={usuarios} />
         </div>
     )

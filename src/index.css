@@ -11,6 +11,9 @@
   --cor-texto: #101010;
   --cor-titulo: #000;
 
+  --mainWidth: 600px;
+  --columnWidth: 200px;
+
   --azulClaro: hsl(190, 95%, 45%);
   --azulMedio: hsl(217, 60%, 47%);
   --azulEscuro: hsl(245, 100%, 15%);
@@ -42,7 +45,7 @@ body {
 }
 
 #root {
-  width: 1000px;
+  width: calc(2rem + var(--mainWidth) + var(--columnWidth) * 2);
   margin: 0 auto;
   padding: 1rem 0;
 }

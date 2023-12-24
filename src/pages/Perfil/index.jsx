@@ -1,5 +1,6 @@
 import style from './Perfil.module.css'
 import Aside from '../../components/Aside/Aside'
+import Main from '../../components/Main/Main'
 import Card from '../../components/Card/Card'
 import Header from '../../components/Header/Header'
 import { useParams } from 'react-router-dom'
@@ -17,7 +18,7 @@ export default function Perfil({ usuarios, postagens }) {
     return (
         <div className={style.perfil}>
             <Header />
-            <main className={style.main}>
+            <Main>
                 <div className={style.perfil__info}>
                     <h1 className='pageTitle'>{[perfil.name, perfil.surname].join(' ')}</h1>
                     <p className={style.handler}>{perfil.handler}</p>
@@ -38,7 +39,7 @@ export default function Perfil({ usuarios, postagens }) {
                         )
                     })}
                 </div>
-            </main>
+            </Main>
             <Aside usuarios={usuarios} />
         </div>
     )

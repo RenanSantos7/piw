@@ -20,6 +20,8 @@
     animation: aparecerCard .6s ease-in-out 1ms forwards;
     animation-timeline: view(block);
     animation-range: cover 0% cover 30%;
+
+    z-index: 1;
 }
 
 .reply {
