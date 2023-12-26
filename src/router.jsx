@@ -1,3 +1,4 @@
+import PaginaPadrao from './pages/PaginaPadrao'
 import Home from './pages/Home'
 import Perfil from './pages/Perfil/index.jsx'
 import users from './json/users.js'
@@ -30,7 +31,7 @@ export default function routerApp() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/'>
+        <Route path='/' element={<PaginaPadrao />}>
           <Route index element={
             <Home
               usuarios={usuarios}
