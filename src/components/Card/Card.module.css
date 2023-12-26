@@ -14,14 +14,12 @@
     gap: 1rem;
     padding: 1rem;
     border-radius: .5rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0,.1);
     background-color: var(--bg-card);
+    z-index: 1;
 
     animation: aparecerCard .6s ease-in-out 1ms forwards;
     animation-timeline: view(block);
     animation-range: cover 0% cover 30%;
-
-    z-index: 1;
 }
 
 .reply {

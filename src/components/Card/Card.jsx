@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import style from './Card.module.css'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRepeat, faHeart as faHeartFill } from '@fortawesome/free-solid-svg-icons'
 import { faComment, faHeart as faHeartOutlined } from '@fortawesome/free-regular-svg-icons'
-////import Imagem from '../Imagem/Imagem'
+import { useState } from 'react'
 
 export default function Card({ usuario, text, publicacao, picture, isReply }) {
     
@@ -13,7 +12,7 @@ export default function Card({ usuario, text, publicacao, picture, isReply }) {
     const [curtida, setCurtida] = useState(false)
     
     return (
-        <article className={style.card}>
+        <article className={`${style.card} boxShadow`}>
             <div className={isReply ? `${style.reply}` : ''}></div>
             <Link to={`/perfil/${autor.id}`}>
                 <img

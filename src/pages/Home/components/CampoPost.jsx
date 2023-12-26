@@ -5,7 +5,7 @@ export default function CampoPost() {
     const [mostraBotao, setMostraBotao] = useState(false)
 
     return (
-        <form className={style.campoPost}>
+        <form className={`${style.campoPost} boxShadow`}>
             <textarea
                 className={style.campoPost__input}
                 placeholder='No que você está pensando?'
