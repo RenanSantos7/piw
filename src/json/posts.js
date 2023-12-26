@@ -153,6 +153,32 @@ const posts = [
         text: 'Feliz Natal Thi!!!',
 		published: '2023-12-24 10:15',
 		replyto: 23
+	},
+	{
+		id: 25,
+		userid: 2,
+        text: 'Nossa, essa ceia tava maravilhosa!',
+        published: '2023-12-25 00:12',
+	},
+	{
+		id: 26,
+        userid: 4,
+		text: 'Natal em família. Sobrinhos lindos.',
+		picture: 'https://plus.unsplash.com/premium_photo-1661759243707-57788530c00d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        published: '2023-12-25 00:15',
+	},
+	{
+		id: 27,
+        userid: 9,
+        text: 'Agradecer por mais um Natal com vocês',
+        picture: 'https://images.unsplash.com/photo-1545622783-b3e021430fee?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        published: '2023-12-25 00:19',
+	},
+	{
+		id: 28,
+        userid: 11,
+        text: 'Melhor almoço que tem é o resto da ceia de Natal',
+        published: '2023-12-25 12:00',
 	}
 ]
 
