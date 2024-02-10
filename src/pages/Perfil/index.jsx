@@ -1,9 +1,11 @@
 import styles from './Perfil.module.css'
 import Card from '../../components/Card/Card'
 import { useParams } from 'react-router-dom'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { PiwContext } from '../../contexts/context'
 
-export default function Perfil({ usuarios, postagens }) {
+export default function Perfil() {
+    const { usuarios, postagens } = useContext(PiwContext)
 
     const parametros = useParams()
 

@@ -1,8 +1,12 @@
 import style from './Home.module.css'
 import Card from '../../components/Card/Card.jsx'
 import CampoPost from './components/CampoPost.jsx'
+import { PiwContext } from '../../contexts/context.jsx'
+import { useContext } from 'react'
 
-export default function Home({ usuarios, postagens }) {
+export default function Home() {
+
+    const { usuarios, postagens } = useContext(PiwContext)
 
     return (
         <>
@@ -19,7 +23,7 @@ export default function Home({ usuarios, postagens }) {
                             text={postagem.text}
                             picture={postagem.picture}
                             publicacao={postagem.published}
-                            isReply={postagem.replyto ? true : false}
+                            isReply={!!postagem.replyto}
                         />
 
                     )
